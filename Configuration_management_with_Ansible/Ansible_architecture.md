@@ -50,6 +50,8 @@ Ansible would be used throughout the Software Development Life Cycle. It would m
     ![alt text](../images/ansible_hosts_setup.PNG)
 9. We would like to verify that this change has taken place through using the command `sudo ansible web -m ping` as this should return a `pong` response, if the controller is able to communicate with the app/database.<br>
       ![alt text](../images/ansible_controller_part7.PNG)
+10. Create a text file using the command `sudo touch test-text.txt`.
+11. Now to transfer this file from your ansible controller to the app and database vm
 
-
-### 
+### AdHoc commands
+To access the AdHoc commands, you can follow the following link: https://docs.ansible.com/ansible/latest/user_guide/intro_adhoc.html
