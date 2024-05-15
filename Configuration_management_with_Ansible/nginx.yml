@@ -1,0 +1,23 @@
+# creating a playbook to install/config nginx in the web server
+
+---
+
+# YAML starts with three dashes
+ 
+# Add the name of the host (web)
+
+  - hosts: web
+ 
+# see the logs gather facts
+
+  gather_facts: yes
+ 
+# provide admin access - sudo
+
+  become: true
+ 
+# add instructions to install nginx on the web server and ensure nginx is in a 'running state'
+
+  tasks:
+   - name: Installing Nginx on the web server
+     apt: pkg=nginx state=present
